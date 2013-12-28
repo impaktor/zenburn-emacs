@@ -346,25 +346,26 @@ Also bind `class' to ((class color) (min-colors 89))."
        (:underline (:style wave :color ,zenburn-red) :inherit unspecified))
       (t (:foreground ,zenburn-red-1 :weight bold :underline t))))
 ;;;;; erc
-   `(erc-action-face ((t (:inherit erc-default-face))))
-   `(erc-bold-face ((t (:weight bold))))
-   `(erc-current-nick-face ((t (:foreground ,zenburn-blue :weight bold))))
-   `(erc-dangerous-host-face ((t (:inherit font-lock-warning-face))))
-   `(erc-default-face ((t (:foreground ,zenburn-fg))))
-   `(erc-direct-msg-face ((t (:inherit erc-default))))
-   `(erc-error-face ((t (:inherit font-lock-warning-face))))
-   `(erc-fool-face ((t (:inherit erc-default))))
-   `(erc-highlight-face ((t (:inherit hover-highlight))))
-   `(erc-input-face ((t (:foreground ,zenburn-yellow))))
-   `(erc-keyword-face ((t (:foreground ,zenburn-blue :weight bold))))
-   `(erc-nick-default-face ((t (:foreground ,zenburn-yellow :weight bold))))
-   `(erc-my-nick-face ((t (:foreground ,zenburn-red :weight bold))))
+   `(erc-action-face ((t (:inherit erc-default-face))))      ; ej testat
+   `(erc-bold-face ((t (:weight bold))))                     ; possible culprit
+   `(erc-current-nick-face ((t (:foreground ,zenburn-blue :weight bold)))) ; possible culprit
+   `(erc-dangerous-host-face ((t (:inherit font-lock-warning-face)))); possible culprit
+   `(erc-default-face ((t (:foreground ,zenburn-fg))))       ; OK
+   `(erc-direct-msg-face ((t (:inherit erc-default))))       ; is IndianRed OK kin of
+   `(erc-error-face ((t (:foreground ,zenburn-yellow-2 :weight bold)))) ; is red and horrible, inherit doesnt work? put it explicitly
+   `(erc-fool-face ((t (:inherit erc-default))))             ; OK
+   `(erc-highlight-face ((t (:inherit hover-highlight)))) ; possible culprit
+   `(erc-input-face ((t (:foreground ,zenburn-yellow))))     ; brown OK
+   `(erc-keyword-face ((t (:foreground ,zenburn-blue :weight bold))))  ; pale green OK
+;;    `(erc-nick-default-face ((t (:foreground ,zenburn-yellow :weight bold)))) ;; possible culprit
+   `(erc-my-nick-face ((t (:foreground ,zenburn-red :weight bold))))  ; brown OK
    `(erc-nick-msg-face ((t (:inherit erc-default))))
-   `(erc-notice-face ((t (:foreground ,zenburn-green))))
-   `(erc-pal-face ((t (:foreground ,zenburn-orange :weight bold))))
+   `(erc-notice-face ((t (:foreground ,zenburn-green))))      ; OK
+   `(erc-pal-face ((t (:foreground ,zenburn-orange :weight bold))))   ; magenta OK, but maybe use zenburn-magenta?
    `(erc-prompt-face ((t (:foreground ,zenburn-orange :background ,zenburn-bg :weight bold))))
    `(erc-timestamp-face ((t (:foreground ,zenburn-green+1))))
-   `(erc-underline-face ((t (:underline t))))
+   `(erc-underline-face ((t (:underline t))))                 ; possible culprit
+   `(fg:erc-color-face2 ((t (:foreground, zenburn-blue))))    ; underlined github-links in pioneer
 ;;;;; git-gutter
    `(git-gutter:added ((t (:foreground ,zenburn-green :weight bold :inverse-video t))))
    `(git-gutter:deleted ((t (:foreground ,zenburn-red :weight bold :inverse-video t))))
