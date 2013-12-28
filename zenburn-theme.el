@@ -902,33 +902,39 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(whitespace-empty ((t (:background ,zenburn-yellow))))
    `(whitespace-space-after-tab ((t (:background ,zenburn-yellow :foreground ,zenburn-red))))
 ;;;;; wanderlust
-   `(wl-highlight-folder-few-face ((t (:foreground ,zenburn-red-2))))
-   `(wl-highlight-folder-many-face ((t (:foreground ,zenburn-red-1))))
-   `(wl-highlight-folder-path-face ((t (:foreground ,zenburn-orange))))
-   `(wl-highlight-folder-unread-face ((t (:foreground ,zenburn-blue))))
-   `(wl-highlight-folder-zero-face ((t (:foreground ,zenburn-fg))))
-   `(wl-highlight-folder-unknown-face ((t (:foreground ,zenburn-blue))))
-   `(wl-highlight-message-citation-header ((t (:foreground ,zenburn-red-1))))
-   `(wl-highlight-message-cited-text-1 ((t (:foreground ,zenburn-red))))
-   `(wl-highlight-message-cited-text-2 ((t (:foreground ,zenburn-green+2))))
-   `(wl-highlight-message-cited-text-3 ((t (:foreground ,zenburn-blue))))
-   `(wl-highlight-message-cited-text-4 ((t (:foreground ,zenburn-blue+1))))
-   `(wl-highlight-message-header-contents-face ((t (:foreground ,zenburn-green))))
-   `(wl-highlight-message-headers-face ((t (:foreground ,zenburn-red+1))))
-   `(wl-highlight-message-important-header-contents ((t (:foreground ,zenburn-green+2))))
-   `(wl-highlight-message-header-contents ((t (:foreground ,zenburn-green+1))))
-   `(wl-highlight-message-important-header-contents2 ((t (:foreground ,zenburn-green+2))))
-   `(wl-highlight-message-signature ((t (:foreground ,zenburn-green))))
-   `(wl-highlight-message-unimportant-header-contents ((t (:foreground ,zenburn-fg))))
-   `(wl-highlight-summary-answered-face ((t (:foreground ,zenburn-blue))))
-   `(wl-highlight-summary-disposed-face ((t (:foreground ,zenburn-fg
-                                                         :slant italic))))
-   `(wl-highlight-summary-new-face ((t (:foreground ,zenburn-blue))))
-   `(wl-highlight-summary-normal-face ((t (:foreground ,zenburn-fg))))
-   `(wl-highlight-summary-thread-top-face ((t (:foreground ,zenburn-yellow))))
-   `(wl-highlight-thread-indent-face ((t (:foreground ,zenburn-magenta))))
-   `(wl-highlight-summary-refiled-face ((t (:foreground ,zenburn-fg))))
-   `(wl-highlight-summary-displaying-face ((t (:underline t :weight bold))))
+;;    `(wl-highlight-folder-few-face ((t (:foreground ,zenburn-red-2))))
+;;    `(wl-highlight-folder-many-face ((t (:foreground ,zenburn-red-1))))
+;; ;   `(wl-highlight-folder-path-face ((t (:weight bold)))) ;; bold when new mail, color undefined!
+;;    `(wl-highlight-folder-unread-face ((t (:foreground ,zenburn-blue))))
+;;    `(wl-highlight-folder-zero-face ((t (:foreground ,zenburn-fg))))
+;;    `(wl-highlight-folder-unknown-face ((t (:foreground ,zenburn-blue))))             ;; RoyalBlue
+;;    `(wl-highlight-folder-closed-face ((t (:foreground ,zenburn-green))))              ;; yyy DarkOliveGreen
+;;    `(wl-highlight-folder-opened-face ((t (:foreground ,zenburn-green+2))))              ;; yyy ForestGreen
+;;    `(wl-highlight-message-citation-header ((t (:foreground ,zenburn-red-1))))
+;;    `(wl-highlight-message-cited-text-1 ((t (:foreground ,zenburn-red))))
+;;    `(wl-highlight-message-cited-text-2 ((t (:foreground ,zenburn-green+2))))
+;;    `(wl-highlight-message-cited-text-3 ((t (:foreground ,zenburn-blue))))
+;;    `(wl-highlight-message-cited-text-4 ((t (:foreground ,zenburn-blue+1))))
+;;    `(wl-highlight-message-header-contents-face ((t (:foreground ,zenburn-green))))
+;;    `(wl-highlight-message-headers-face ((t (:foreground ,zenburn-red+1))))
+;;    `(wl-highlight-message-important-header-contents ((t (:foreground ,zenburn-green+2))))
+;;    `(wl-highlight-message-header-contents ((t (:foreground ,zenburn-green+1))))
+;;    `(wl-highlight-message-important-header-contents2 ((t (:foreground ,zenburn-green+2))))
+;;    `(wl-highlight-message-signature ((t (:foreground ,zenburn-green))))
+;;    `(wl-highlight-message-unimportant-header-contents ((t (:foreground ,zenburn-fg))))
+;;    `(wl-highlight-summary-unread-face ((t (:foreground ,zenburn-blue))))           ;; yyy RoyalBlue
+;;    `(wl-highlight-summary-answered-face ((t (:foreground ,zenburn-green+2))))      ;; xxx zenburn-green+2 khaki4
+;;    `(wl-highlight-summary-disposed-face ((t (:foreground ,zenburn-fg :slant italic))))  ;; ok, DarkKhaki
+;;    `(wl-highlight-summary-deleted-face ((t (:foreground ,zenburn-fg-1 :slant italic)))) ;; yyy RoyalBlue4
+;;    `(wl-highlight-summary-important-flag-face ((t (:foreground ,zenburn-red))))    ;; yyy ny red
+;;    `(wl-highlight-summary-new-face ((t (:foreground ,zenburn-red+1))))             ;; xxx tomato
+;;    `(wl-highlight-action-argument-face ((t (:foreground ,zenburn-red-4))))         ;; yyy ny pink
+;; ;;TODO:    wl-highlight-logo-face
+;;    `(wl-highlight-summary-normal-face ((t (:foreground ,zenburn-fg))))
+;;    `(wl-highlight-summary-thread-top-face ((t (:foreground ,zenburn-yellow))))     ;; green4
+;;    `(wl-highlight-thread-indent-face ((t (:foreground ,zenburn-magenta))))
+;;    `(wl-highlight-summary-refiled-face ((t (:foreground ,zenburn-fg))))
+;;    `(wl-highlight-summary-displaying-face ((t (:underline t :weight bold))))
 ;;;;; which-func-mode
    `(which-func ((t (:foreground ,zenburn-green+4))))
 ;;;;; yascroll
