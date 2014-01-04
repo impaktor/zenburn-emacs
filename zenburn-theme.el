@@ -273,6 +273,19 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(diredp-read-priv ((t (:foreground ,zenburn-green-1))))
    `(diredp-symlink ((t (:foreground ,zenburn-yellow))))
    `(diredp-write-priv ((t (:foreground ,zenburn-magenta))))
+;;;;; dired-filetype
+   `(dired-filetype-compress ((t (:foreground ,zenburn-orange))))  ;face for compressed files: zip
+   `(dired-filetype-execute ((t (:foreground ,zenburn-green+1 :weight bold))))  ;face for executable files: sh,
+   `(dired-filetype-omit ((t (:foreground ,zenburn-green))))       ;face for hidden files
+   `(dired-filetype-document ((t (:foreground ,zenburn-green+1)))) ;face for rich document files: doc
+   `(dired-filetype-plain ((t (:foreground ,zenburn-cyan))))       ;face for plain text files: txt
+   `(dired-filetype-common ((t (:foreground ,zenburn-blue-2))))    ;face for common file names: README
+   `(dired-filetype-xml ((t (:foreground ,zenburn-green+4))))      ;face for xml type files: html
+   `(dired-filetype-source ((t (:foreground ,zenburn-blue))))      ;face for source code files: c, cc, cpp
+   `(dired-filetype-music ((t (:foreground ,zenburn-red))))        ;face for music files: mp3
+   `(dired-filetype-video ((t (:foreground ,zenburn-magenta))))    ;face for video files: avi
+   `(dired-filetype-image ((t (:foreground ,zenburn-yellow-2))))   ;face for pictures: jpg
+   `(dired-filetype-lnk ((t (:foreground ,zenburn-yellow  :background ,zenburn-green-1))))     ;face for lnk files: lnk
 ;;;;; ediff
    `(ediff-current-diff-A ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
    `(ediff-current-diff-Ancestor ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
