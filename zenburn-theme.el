@@ -363,7 +363,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(erc-notice-face ((t (:foreground ,zenburn-green))))      ; OK
    `(erc-pal-face ((t (:foreground ,zenburn-orange :weight bold))))   ; magenta OK, but maybe use zenburn-magenta?
    `(erc-prompt-face ((t (:foreground ,zenburn-orange :background ,zenburn-bg :weight bold))))
-   `(erc-timestamp-face ((t (:foreground ,zenburn-green+1))))
+   `(erc-timestamp-face ((t (:foreground ,zenburn-green+4))))
    `(erc-underline-face ((t (:underline t))))                 ; possible culprit
    `(fg:erc-color-face2 ((t (:foreground, zenburn-blue))))    ; underlined github-links in pioneer
 ;;;;; git-gutter
